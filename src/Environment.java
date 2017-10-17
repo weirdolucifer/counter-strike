@@ -186,9 +186,16 @@ public class Environment {
     {
     	int tn=0;
     	int ctn=0;
+    	if(m>n)
+    	System.out.println("Terrorists Won this Match");
+    	else 
+    		System.out.println("CounterTerrorists Won this Match");
     	while(true)
     	{
+    	if(list1.Terrorists[tn].getGameBasis().equals("Energylevel"))
+    		
     	SortbyEnergylevel(list1,list2,m,n);
+    	if(list1.Terrorists[tn].getGameBasis().equals("Success"))
     	SortbySuccess(list1,list2,m,n);
     	if(list1.Terrorists[tn].getStrategy().equals("Nearest"))	
     	{
@@ -196,7 +203,7 @@ public class Environment {
     	}
     	if(list1.Terrorists[tn].getStrategy().equals("Random"))	
     	{
-    		Strategy a4= new Random("Terrorists",list1,list2,tn,m,n);	
+    		Strategy a4= new Random1("Terrorists",list1,list2,tn,m,n);	
     	}
     	if(list1.Terrorists[tn].getStrategy().equals("Ahead"))	
     	{
@@ -212,14 +219,18 @@ public class Environment {
     	tn++;
     	
     	
-    	
+    	if(list2.CounterTerrorists[ctn].getGameBasis().equals("Energylevel"))
+    		
+        	SortbyEnergylevel(list1,list2,m,n);
+        	if(list2.CounterTerrorists[ctn].getGameBasis().equals("Success"))
+        	SortbySuccess(list1,list2,m,n);
     	if(list2.CounterTerrorists[ctn].getStrategy().equals("Nearest"))	
     	{
     	    Strategy a4= new Nearest("CounterTerrorists",list1,list2,ctn,m,n);	
     	}
     	if(list2.CounterTerrorists[ctn].getStrategy().equals("Random"))	
     	{
-    		Strategy a4= new Random("CounterTerrorists",list1,list2,ctn,m,n);	
+    		Strategy a4= new Random1("CounterTerrorists",list1,list2,ctn,m,n);	
     	}
     	if(list2.CounterTerrorists[ctn].getStrategy().equals("Ahead"))	
     	{
@@ -227,7 +238,7 @@ public class Environment {
     	}
     	
     	site(list2.CounterTerrorists[ctn].getXaxis(),list2.CounterTerrorists[ctn].getYaxis(),list1,list2,m,n,0,ctn);
-    	AImove(list2.CounterTerrorists[ctn].getXaxis(),list2.CounterTerrorists[ctn].getYaxis(),list2.CounterTerrorists[ctn].getSpeed(),list2.CounterTerrorists[tn].getDesxaxis(),list2.CounterTerrorists[tn].getDesyaxis(),list1,list2,0,ctn);
+    	AImove(list2.CounterTerrorists[ctn].getXaxis(),list2.CounterTerrorists[ctn].getYaxis(),list2.CounterTerrorists[ctn].getSpeed(),list2.CounterTerrorists[ctn].getDesxaxis(),list2.CounterTerrorists[ctn].getDesyaxis(),list1,list2,0,ctn);
     	ctn++;
     	if(tn==m) tn=0;
     	if(ctn==n) ctn=0;
