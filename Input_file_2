@@ -1,0 +1,58 @@
+Enter the Number of Terrorists
+
+3
+Enter the Number of Counter Terrorists
+2
+Mechanism for Storage?
+array
+Input the coordinates of Bomb
+
+4.5
+3.4
+
+Input the Name,Behaviour,Strategy,Energy Level, current position in x axis,current position in y axis,Range of player(angle),gamebasis and Speed of Terrorists
+
+Avinash
+CautionsPlayers
+Ahead
+4
+8.7
+6.4
+20.4
+Energylevel
+30.5
+Input the Name,Behaviour,Strategy,Energy Level, current position in x axis,current position in y axis,Range of player(angle),gamebasis and Speed of Terrorists
+
+Aman
+BlindPlayers
+Random
+3
+3.4
+2.4
+40.3
+Circular
+4.4
+Input the Name,Behaviour,Strategy,Energy Level, current position in x axis,current position in y axis,Range of player(angle),gamebasis and Speed of Terrorists
+
+Ramu
+AggressivePlayers
+Random
+10
+5.4
+3.6
+30.5
+Circular
+40.3
+Input the Name,Behaviour,Strategy,Energy Level, current position in x axis,current position in y axis,Range of player(angle),gamebasis and Speed of CounterTerrorists
+
+Manu
+BlindPlayers
+Random
+30
+4.4
+2.5
+60.0
+Success
+30.4
+Terrorists Won this Match
+
