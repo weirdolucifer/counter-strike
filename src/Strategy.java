@@ -1,4 +1,7 @@
-import java.util.*;
+
+
+import java.util.Random;
+
 abstract class Strategy {
 
 }
@@ -83,12 +86,12 @@ class Nearest extends Strategy
 		}
 	}
 }
-class Random extends Strategy
+class Random1 extends Strategy
 {
     
 
 
-	Random(String check,Terrorists list1,CounterTerrorists list2,int tn,int m,int n)
+	Random1(String check,Terrorists list1,CounterTerrorists list2,int tn,int m,int n)
 	{
 		if("Terrorists".equals(check))
 		{
