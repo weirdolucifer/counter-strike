@@ -1,2 +1,2 @@
 # Counter_Strike
-A very simple game like CS official but it is not GUI based
+A very simple non GUI based CS official game.
